@@ -1,0 +1,13 @@
+POST http://localhost:7583/api/v1/rpc
+Content-Type: application/json
+
+{
+  "jsonrpc":"2.0",
+  "method": "send",
+  "params": {
+    "account": "{{$dotenv ACCOUNT}}",
+    "recipient": "{{$dotenv RECIPIENT}}",
+    "message": "Testing, 123"
+  },
+  "id": "{{$guid}}"
+}

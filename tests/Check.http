@@ -1,0 +1,1 @@
+GET http://localhost:7583/api/v1/check

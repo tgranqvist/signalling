@@ -1,0 +1,22 @@
+name: signalling
+
+services:
+  signal-daemon:
+    image: ghcr.io/asamk/signal-cli:0.14.3-native
+    command: 
+      - "daemon"
+      - "--http"
+      - "0.0.0.0:7583"
+    volumes:
+      - signalling:/var/lib/signal-cli
+    ports:
+      - 7583:7583
+    networks:
+      - signalling
+
+networks:
+  signalling:
+
+volumes:
+  signalling:
+    external: true
