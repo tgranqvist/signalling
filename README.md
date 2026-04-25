@@ -30,7 +30,7 @@ To run the tests, you need an env file `.env` at project root:
 
 ```
 ACCOUNT=+YOUR_NUMBER_HERE
-RECIPIENT=+RECIPIENT_NUMER_HERE
+RECIPIENT=+RECIPIENT_NUMBER_HERE
 ```
 
 ## Testing
